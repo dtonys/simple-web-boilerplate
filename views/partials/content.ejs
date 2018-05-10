@@ -1,0 +1,55 @@
+<div class="content" >
+  <h1> Motivation </h1>
+  <p> HTML, CSS, and Javascript are the most fundamental technologies to create websites. </p>
+  <p> Simple web boilerplate builds upon these basics, providing the minimum set of tools to develop simple websites. </p>
+  <p> No javascript frameworks, UI frameworks, or other complex tools. </p>
+  <p> Just the fundamental starter code to develop a production ready front end. </p>
+  <p> Supports modern browsers, and IE9+ </p>
+  <a href="/demo"> <h3>Demo Page</h3> </a>
+  <br><hr><br>
+  <h1> Use cases </h1>
+  <ul style="display: inline-block; text-align: left;" >
+    <li style="padding-bottom: 10px;" > Static pages & content </li>
+    <li style="padding-bottom: 10px;" > Prototypes and proof of concept </li>
+    <li style="padding-bottom: 10px;"> Custom designed websites </li>
+    <li style="padding-bottom: 10px;"> Websites seeking to minimize js and css file size </li>
+  </ul>
+  <br><hr><br>
+  <h1> Features </h1>
+  <div style="text-align: left; display: inline-block;" >
+
+    <h4> server </h4>
+    <ul style="display: inline-block; text-align: left;" >
+      <li style="padding-bottom: 10px;" > Node.js powered backend with Express and EJS server side rendering </li>
+      <li style="padding-bottom: 10px;"> ESLint setup via `eslint-config-airbnb-es5` to enforce code quality </li>
+      <li style="padding-bottom: 10px;"> nodemon setup to automatically reload server side changes </li>
+    </ul>
+
+    <h4> javascript </h4>
+    <ul>
+      <li style="padding-bottom: 10px;" > Vanilla JS by default, inserted via script tags </li>
+      <li style="padding-bottom: 10px;" > Lodash for utility functionality and for client side rendering </li>
+      <li style="padding-bottom: 10px;" > Promise polyfill to allow native promise on all browsers </li>
+      <li style="padding-bottom: 10px;" > AJAX setup via `unfetch` library, allowing modern fetch API on all browsers </li>
+    </ul>
+
+    <h4> css </h4>
+    <ul>
+      <li style="padding-bottom: 10px;" > Plain css, inserted via link tags </li>
+      <li style="padding-bottom: 10px;"> CSS `clearfix`class </li>
+      <li style="padding-bottom: 10px;"> `box-sizing: border-box` set as the default box model </li>
+      <li style="padding-bottom: 10px;"> `normalize.css` to reset browser differences </li>
+      <li style="padding-bottom: 10px;"> BEM conventions by default </li>
+    </ul>
+
+    <h4> gulp </h4>
+    <ul>
+      <li style="padding-bottom: 10px;"> Minification and concatanation of assets </li>
+      <li style="padding-bottom: 10px;"> Autoprefixer compilation to handle X-browser CSS </li>
+      <li style="padding-bottom: 10px;"> Babel compilation to allow modern ES6 javascript on all browsers </li>
+      <li style="padding-bottom: 10px;"> `gulp-useref` plugin to specify what css / js files to minify within the html templates </li>
+    </ul>
+
+  </div>
+
+</div>

@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <!-- *META* -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    <title> <%= title %> </title>
+    <!-- *CSS* -->
+    <%- include('../partials/css-common') %>
+    <!-- build:css build/main.min.css -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <%- include('../partials/navbar') %>
+    <%- include('../partials/demo-content') %>
+    <!-- *JS* -->
+    <%- include('../partials/js-common') %>
+    <!-- build:js build/demo.min.js -->
+    <script src="js/lib/form-serialize.js" ></script>
+    <script src="js/src/demo.js" ></script>
+    <!-- endbuild -->
+  </body>
+</html>

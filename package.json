@@ -1,0 +1,41 @@
+{
+  "name": "simple-web-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "dtonys@gmail.com <dtonys@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-preset-env": "^1.6.1",
+    "body-parser": "^1.18.2",
+    "cross-env": "^5.1.3",
+    "ejs": "^2.5.7",
+    "eslint": "^4.18.1",
+    "eslint-config-airbnb-es5": "^1.2.0",
+    "eslint-plugin-react": "^7.7.0",
+    "express": "^4.16.2",
+    "gulp": "4.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-if": "^2.0.2",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-size": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp-useref": "^3.1.4",
+    "nodemon": "^1.17.1",
+    "pm2": "^2.10.1"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development PORT=8080 nodemon --delay 2 --watch app.js app.js",
+    "build": "cross-env NODE_ENV=production gulp",
+    "clean": "gulp clean",
+    "start": "cross-env NODE_ENV=production PORT=8080 forever start --uid simple-web --append app.js",
+    "stop": "forever stop simple-web",
+    "lint-js": "eslint -c .eslintrc.js ./public/js gulpfile.js app.js"
+  },
+  "devDependencies": {}
+}

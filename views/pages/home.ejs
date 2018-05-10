@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <!-- *META* -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    <title> <%= title %> </title>
+    <!-- *CSS* -->
+    <%- include('../partials/css-common') %>
+    <!-- build:css build/main.min.css -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <%- include('../partials/navbar') %>
+    <%- include('../partials/content') %>
+    <!-- *JS* -->
+    <%- include('../partials/js-common') %>
+  </body>
+</html>
