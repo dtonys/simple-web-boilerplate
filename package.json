@@ -33,7 +33,7 @@
     "dev": "cross-env NODE_ENV=development PORT=8080 nodemon --delay 2 --watch app.js app.js",
     "build": "cross-env NODE_ENV=production gulp",
     "clean": "gulp clean",
-    "start": "cross-env NODE_ENV=production PORT=8080 forever start --uid simple-web --append app.js",
+    "start": "cross-env NODE_ENV=production PORT=9000 forever start --uid simple-web --append app.js",
     "stop": "forever stop simple-web",
     "lint-js": "eslint -c .eslintrc.js ./public/js gulpfile.js app.js"
   },
