@@ -1,3 +1,4 @@
+#!/bin/sh
 cd ~/webapps/simple-web-boilerplate
 git pull origin master
 yarn
